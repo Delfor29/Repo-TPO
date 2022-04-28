@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:azure;
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+    grid-template-areas: "area1 area1 area1"
+                         "area2 area2 area2"   
+                         "area3 area3 area3"
+                         "area4 area4 area4"
+                         "area5 area5 area5"
+                         "area6 area6 area6";
+}
+div{
+    background-color: black;
+    border: 2px solid white;
+    padding: 5px;
+}
+.ppalheader{
+    grid-area: area1;
+    background-image: url(../img/heading-b.jpg);
+    display: inline-grid;   
+}
+.redsocial{
+    background: 0%;
+}
+.social{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+}
+.socialmedia{
+    list-style: none;
+    padding: 1%;
+}
+.midheader{
+    display: grid;
+    grid-template: auto auto;
+    grid-template-areas: "mid1 mid2";
+    background: 0%;
+}
+.logo{
+    grid-area: mid1;
+    background: 0%;
+    color: #ffffff
+}
+.nav {
+    grid-area: mid2;
+    background: 0%;
+}
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    background: 0%;
+}
+.menu {
+    list-style: none;
+    border-style: solid;
+    border-color: #FFFFFF;
+    padding: 1%;
+}
+.mid{
+    grid-area: area2;
+    display: grid;
+    grid-template: auto auto auto;
+    grid-template-areas: "rx reso mamo";
+}
+.rx{
+    grid-area: rx;
+}
+.reso{
+    grid-area: reso;
+}
+.mamo {
+    grid-area: mamo;
+}
+.resume{
+    grid-area: area3;
+}
+.feauture {
+    display: grid;
+    grid-template: 0.25fr 1fr 1fr 1fr 0.25fr;
+    grid-template-areas: ". compro tray inno .";
+}
+.compromiso {
+    grid-area: compro;
+}
+.trayectoria {
+    grid-area: tray;
+}
+.innovacion {
+    grid-area: inno;
+}
+.asides{
+    grid-area: area4;
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+    grid-template-areas: "ser ave pal";
+    justify-content: space-evenly;
+}
+.servicios{
+    grid-area: ser;
+}
+.avellaneda {
+    grid-area: ave;
+}
+.palermo {
+    grid-area: pal;
+}
+.bgimg{
+    grid-area: area5;
+    background-image: url(../img/heading-b.jpg);
+    border: 0;
+}
+.final{
+    grid-area: area6;
+    display: grid;
+    grid-template: auto auto;
+    grid-template-areas: "copy social"; 
+}
+.copyright {
+    grid-area: copy;
+}
+.redsocialfoot {
+    grid-area: social;
+}
