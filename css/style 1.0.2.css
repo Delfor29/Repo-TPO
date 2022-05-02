@@ -16,35 +16,18 @@
                          "area6 area6 area6";
 }
 div{
-    /*background-color: black;*/
-    padding: 5px;
+    /* background-color: black;*/
+    /* padding: 5px; */
 }
+/*BARRA DE NAVEGACION*/
 .ppalheader{
     grid-area: area1;
     background-image: url(../img/heading-b.jpg);
-    display: inline-grid;   
+    display: inline-grid;
+    padding: 15px 15px;
+    height: 150px;   
 }
-.redsocial{
-    background: 0%;
-}
-.social{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: end;
-}
-.socialmedia{
-    list-style: none;
-    padding: 1%;
-}
-.socialmedia a:link {
-    color: azure;
-}
-.socialmedia a:visited {
-    color: azure;
-}
-.socialmedia a:hover{
-    color:darkturquoise;
-}
+
 .midheader{
     display: grid;
     grid-template: auto auto;
@@ -54,9 +37,10 @@ div{
 .logo{
     grid-area: mid1;
     background: 0%;
-    color: #ffffff
+    color: #ffffff;
+    padding: 10px;
 }
-.nav {
+.navi {
     grid-area: mid2;
     background: 0%;
 }
@@ -87,7 +71,7 @@ div{
 .mid{
     grid-area: area2;
     display: grid;
-    grid-template: auto auto auto;
+    grid-template: 1fr 1fr 1fr;
     grid-template-areas: "rx reso mamo";
     color: white;
     text-align: center;
@@ -152,7 +136,7 @@ div{
     grid-template: 1fr 1fr 1fr;
     grid-template-areas: "ser ave pal";
     justify-content: space-evenly;
-    background-color: rgb(70, 70, 70)
+    background-color: rgb(75, 75, 75)
 }
 .servicios{
     grid-area: ser;
@@ -195,6 +179,12 @@ div{
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
 }
+
+/* FOOTER */
+footer{
+    background-color: rgb(85, 85, 85);
+    padding: 10px
+}
 .final{
     grid-area: area6;
     display: grid;
@@ -204,6 +194,134 @@ div{
 .copyright {
     grid-area: copy;
 }
+.redsocial{
+    background: 0%;
+}
+.social{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+}
+.socialmedia{
+    list-style: none;
+    padding: 1%;
+}
+.socialmedia a:link {
+    color: azure;
+}
+.socialmedia a:visited {
+    color: azure;
+}
+.socialmedia a:hover{
+    color:darkturquoise;
+}
 .redsocialfoot {
     grid-area: social;
+}
+@media screen and (max-width: 425px) {
+    /*MENU HAMBURGUESA I*/
+
+    /*RESPONSIVE CELULAR*/
+    .main{ 
+        display: grid;
+        grid-template: 1fr 1fr;
+        grid-template-areas: "area1 area1"
+                             "area5 area5"   
+                             "area2 area2"   
+                             "area3 area3"
+                             "area4 area4"
+                             "area6 area6";
+    }
+    .mid{
+        grid-area: area2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "rx"
+                             "mamo"
+                             "reso";   
+        color: white;
+        text-align: center;
+    }
+    .feauture {
+        display: grid;
+        grid-template: 0.25fr 1fr 0.25fr;
+        grid-template-areas: ". compro ."
+                             ". tray ."
+                             ". inno .";
+        justify-content: center;
+    }
+    .asides{
+        grid-area: area4;
+        display: grid;
+        grid-template: auto;
+        grid-template-areas: "ser"
+                             "ave"
+                             "pal";
+        justify-content: space-evenly;
+        background-color: rgb(75, 75, 75)
+    }
+    .final{
+        grid-area: area6;
+        display: grid;
+        grid-template: auto;
+        grid-template-areas: "social"
+                             "copy";   ; 
+    }
+    .social{
+        justify-content: center;
+    }        
+}
+@media screen and (max-width: 728px) {
+    /*RESPONSIVE PARA TABLET*/
+    .main{ 
+        display: grid;
+        grid-template: 1fr 1fr;
+        grid-template-areas: "area1 area1"
+                             "area5 area5"   
+                             "area2 area2"   
+                             "area3 area3"
+                             "area4 area4"
+                             "area6 area6";
+    }
+    .mid{
+        grid-area: area2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "rx"
+                             "mamo"
+                             "reso";   
+        color: white;
+        text-align: center;
+    }
+    .feauture {
+        display: grid;
+        grid-template: 0.25fr 1fr 0.25fr;
+        grid-template-areas: ". compro ."
+                             ". tray ."
+                             ". inno .";
+        justify-content: center;
+    }
+    .asides{
+        grid-area: area4;
+        display: grid;
+        grid-template: auto;
+        grid-template-areas: "ser"
+                             "ave"
+                             "pal";
+        justify-content: space-evenly;
+        background-color: rgb(75, 75, 75)
+    }
+    .final{
+        grid-area: area6;
+        display: grid;
+        grid-template: auto;
+        grid-template-areas: "social"
+                             "copy";   ; 
+    }
+    .social{
+        justify-content: center;
+    }        
+    .copyright{
+        text-align: center;
+    }
 }
