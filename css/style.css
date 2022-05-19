@@ -311,11 +311,11 @@ iframe {
         display: grid;
         grid-template: 1fr 1fr;
         grid-template-areas: "area1 area1"
-        "area5 area5"      
-        "area2 area2"   
-        "area3 area3"
-        "area4 area4"
-        "area6 area6";
+                             "area5 area5"      
+                             "area2 area2"   
+                             "area3 area3"
+                             "area4 area4"
+                             "area6 area6";
     }
     #wrapper {
         justify-content: space-around;
@@ -325,8 +325,8 @@ iframe {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "rx"
-        "mamo"
-        "reso";   
+                             "mamo"
+                             "reso";   
         color: white;
         text-align: center;
     }
@@ -334,8 +334,8 @@ iframe {
         display: grid;
         grid-template: 0.25fr 1fr 0.25fr;
         grid-template-areas: ". compro ."
-        ". tray ."
-        ". inno .";
+                             ". tray ."
+                             ". inno .";
         justify-content: center;
     }
     .asides{
@@ -343,8 +343,8 @@ iframe {
         display: grid;
         grid-template: auto;
         grid-template-areas: "ser"
-        "ave"
-        "pal";
+                             "ave"
+                             "pal";
         justify-content: space-evenly;
         background-color: rgb(75, 75, 75)
     }
@@ -353,7 +353,7 @@ iframe {
         display: grid;
         grid-template: auto;
         grid-template-areas: "social"
-        "copy"; 
+                             "copy"; 
     }
     .social{
         justify-content: center;

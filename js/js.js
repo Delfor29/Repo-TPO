@@ -30,15 +30,3 @@ Copyright - 2022 | Todos los derechos reservados
 </div>
 `
 document.getElementById("final").innerHTML = cad;
-
-cad = `
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Healthy S.A.</title>
-<script src="https://kit.fontawesome.com/5896e44278.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/style.css">
-<script src="https://kit.fontawesome.com/5896e44278.js" crossorigin="anonymous"></script>
-<link rel="shortcut icon" href="img/favicon-02-65x65.png" type="image/x-icon">
-`
-document.getElementById("ppal").innerHTML = cad;
