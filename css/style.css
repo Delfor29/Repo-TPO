@@ -109,15 +109,16 @@ nav .content .links {
 
     50%{margin-left: -200%;}
     70%{margin-left: -200%;}
-
+    
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
 }
 
+/*DIV CON ENLACE*/
 .mid{
     grid-area: area2;
     display: grid;
-    grid-template: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "rx reso mamo";
     color: white;
     text-align: center;
@@ -138,20 +139,17 @@ nav .content .links {
 .mid a:hover {
     border: 1.5px solid #ffffff;
 }
-
-
-/*DIV CON ENLACE*/
 .rx{
     grid-area: rx;
-    background-color: #9FA8DC;
+    background-color: #3eb8d7;
 }
 .reso{
     grid-area: reso;
-    background-color:#A2C3F2;
+    background-color:#0693e3;
 }
 .mamo {
     grid-area: mamo;
-    background-color: #9BCFE8
+    background-color: #3065b5;
 }
 .resume {
     grid-area: area3;
@@ -161,7 +159,7 @@ nav .content .links {
 }
 .feauture {
     display: grid;
-    grid-template: 0.25fr 1fr 1fr 1fr 0.25fr;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
     grid-template-areas: ". compro tray inno .";
     font-size: 16px;
 }
@@ -188,7 +186,7 @@ nav .content .links {
 .asides{
     grid-area: area4;
     display: grid;
-    grid-template: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "ser ave pal";
     justify-content: space-around;
     background-color: rgb(75, 75, 75);
@@ -275,7 +273,7 @@ input, textarea {
     border-radius: 4px;
     resize: vertical;
 }
-input[type=button]:hover{
+input[type="submit"]:hover{
     background-color: darkturquoise;
 }
 iframe {
@@ -309,7 +307,7 @@ iframe {
 @media screen and (max-width: 425px) {
     .main{ 
         display: grid;
-        grid-template: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: "area1 area1"
                              "area5 area5"      
                              "area2 area2"   
@@ -332,7 +330,7 @@ iframe {
     }
     .feauture {
         display: grid;
-        grid-template: 0.25fr 1fr 0.25fr;
+        grid-template-columns: 0.25fr 1.5fr 0.25fr;
         grid-template-areas: ". compro ."
                              ". tray ."
                              ". inno .";
@@ -410,7 +408,7 @@ iframe {
     @media screen and (max-width: 768px) {
         .main{ 
             display: grid;
-            grid-template: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-areas: "area1 area1"
                                  "area5 area5"   
                                  "area2 area2"   
@@ -430,7 +428,7 @@ iframe {
         }
         .feauture {
             display: grid;
-            grid-template: 0.25fr 1fr 0.25fr;
+            grid-template-columns: 0.25fr 1fr 0.25fr;
             grid-template-areas: ". compro ."
                                  ". tray ."
                                  ". inno .";

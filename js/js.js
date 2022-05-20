@@ -30,3 +30,4 @@ Copyright - 2022 | Todos los derechos reservados
 </div>
 `
 document.getElementById("final").innerHTML = cad;
+
