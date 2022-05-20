@@ -307,13 +307,13 @@ iframe {
 @media screen and (max-width: 425px) {
     .main{ 
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "area1 area1"
-                             "area5 area5"      
-                             "area2 area2"   
-                             "area3 area3"
-                             "area4 area4"
-                             "area6 area6";
+        grid-template-columns: 1fr;
+        grid-template-areas: "area1"
+                             "area5"      
+                             "area2"   
+                             "area3"
+                             "area4"
+                             "area6";
     }
     #wrapper {
         justify-content: space-around;
@@ -339,11 +339,11 @@ iframe {
     .asides{
         grid-area: area4;
         display: grid;
-        grid-template: auto;
+        grid-template-columns: 1fr;
         grid-template-areas: "ser"
                              "ave"
                              "pal";
-        justify-content: space-evenly;
+        justify-content: center;
         background-color: rgb(75, 75, 75)
     }
     #final{
@@ -408,13 +408,13 @@ iframe {
     @media screen and (max-width: 768px) {
         .main{ 
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: "area1 area1"
-                                 "area5 area5"   
-                                 "area2 area2"   
-                                 "area3 area3"
-                                 "area4 area4"
-                                 "area6 area6";
+            grid-template-columns: 1fr;
+            grid-template-areas: "area1"
+                                 "area5"   
+                                 "area2"   
+                                 "area3"
+                                 "area4"
+                                 "area6";
         }
         .mid{
             grid-area: area2;
@@ -437,11 +437,11 @@ iframe {
         .asides{
             grid-area: area4;
             display: grid;
-            grid-template: auto;
+            grid-template-columns: 1fr;
             grid-template-areas: "ser"
                                  "ave"
                                  "pal";
-            justify-content: space-evenly;
+            justify-content: center;
             background-color: rgb(75, 75, 75)
         }
         #final{
