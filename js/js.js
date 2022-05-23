@@ -6,7 +6,7 @@ let cad = `
         <div class="logo"><a href="index.html"><img src="img/Healthy-logo.png" alt="Centro de diagnostico Healthy"></a></div>
         <ul class="links">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="Somos.html">Quienes somos</a></li>
+            <li><a href="Somos.html">Quiénes somos</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Sedes</a></li>
             <li><a href="#">Blog</a></li>
